@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+    <car>
+        <name>Toyota Camry</name>
+        <price>85 000 BYN</price>
+        <image>img\toyota-camry-xv40.jpg</image>
+        <description>Комфортный седан для города и трассы</description>
+    </car>
+    <car>
+        <name>BMW X5</name>
+        <price>170 000 BYN</price>
+        <image>img\x5.jpg</image>
+        <description>Премиальный внедорожник с мощным двигателем</description>
+    </car>
+    <car>
+        <name>Lada Vesta</name>
+        <price>41 000 BYN</price>
+        <image>img\vesta.jpg</image>
+        <description>Надежный и доступный автомобиль для всей семьи</description>
+    </car>
+    <car>
+        <name>Mclaren 720S</name>
+        <price>316 000 BYN</price>
+        <image>img\mc.jpg</image>
+        <description>Спортивный суперкар с выдающейся динамикой</description>
+    </car>
+    <car>
+        <name>Kia Seltos</name>
+        <price>41 000 BYN</price>
+        <image>img\ks.jpg</image>
+        <description>Современный кроссовер с экономичным двигателем</description>
+    </car>
+    <car>
+        <name>Mg Hector Plus</name>
+        <price>41 000 BYN</price>
+        <image>img\mhp.jpg</image>
+        <description>Вместительный 7-местный SUV с технологичной начинкой</description>
+    </car>
+    <car>
+        <name>Mercedes Benz Glc Coupe</name>
+        <price>170 000 BYN</price>
+        <image>img\mbgc.jpg</image>
+        <description>Элегантный кроссовер-купе от Mercedes</description>
+    </car>
+    <car>
+        <name>Isuzu Mu X</name>
+        <price>65 000 BYN</price>
+        <image>img\imx.jpg</image>
+        <description>Проходимый внедорожник с просторным салоном</description>
+    </car>
+    <car>
+        <name>Maruti Suzuki Vitara Brezza</name>
+        <price>35 000 BYN</price>
+        <image>img\msvb.jpg</image>
+        <description>Компактный кроссовер с низким расходом топлива</description>
+    </car>
+    <car>
+        <name>Honda Amaze</name>
+        <price>30 000 BYN</price>
+        <image></image>
+        <description>Практичный седан с надежной конструкцией</description>
+    </car>
+    <car>
+        <name>Maruti Suzuki Swift</name>
+        <price>28 000 BYN</price>
+        <image></image>
+        <description>Юркий хэтчбек с отличной маневренностью</description>
+    </car>
+    <car>
+        <name>Volvo S90</name>
+        <price>120 000 BYN</price>
+        <image></image>
+        <description>Роскошный седан с высоким уровнем безопасности</description>
+    </car>
+</cars>

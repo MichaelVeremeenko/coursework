@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>уВадима | Премиальные автомобили</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="img/vadim.png" alt="Логотип" class="logo">
+        <h1>у<span>Вадима</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" data-section="promotions">АКЦИИ</a></li>
+          <li><a href="#" data-section="cars">АВТОМОБИЛИ</a></li>
+          <li><a href="#" data-section="order">ОФОРМИТЬ ЗАКАЗ</a></li>
+          <li><a href="#" data-section="reviews">ОТЗЫВЫ</a></li>
+          <li><a href="#" data-section="contact">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+      <div class="auth-dropdown">
+        <button class="auth-btn dropdown-toggle">Профиль</button>
+        <div class="dropdown-menu">
+          <button class="auth-btn">Вход</button>
+          <button class="auth-btn">Регистрация</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="content-container"></div>
+  </main>
+
+  <footer>
+    <div class="copyright">
+      © 2025 уВадима. Все права защищены.
+    </div>
+  </footer>
+
+  <!-- Шаблоны секций -->
+  <template id="promotions-template">
+    <section class="promotions active-section">
+      <div class="section-title">
+        <h2>Специальные предложения</h2>
+        <p>Только в этом месяце эксклюзивные условия на покупку автомобилей</p>
+      </div>
+      
+      <div class="promotion-list">
+        <div class="promotion-item">
+          <h3>Выгодный кредит 3.9%</h3>
+          <p>Специальная ставка по кредиту на все модели в наличии</p>
+          <p class="promotion-date">Действует до: 31.12.2025</p>
+        </div>
+        
+        <div class="promotion-item">
+          <h3>Скидка 15% на комплектацию</h3>
+          <p>При покупке любого автомобиля с дополнительным оборудованием</p>
+          <p class="promotion-date">Действует до: 30.11.2025</p>
+        </div>
+        
+        <div class="promotion-item">
+          <h3>Сервисный пакет в подарок</h3>
+          <p>Бесплатное ТО на 2 года при покупке нового автомобиля</p>
+          <p class="promotion-date">Действует до: 15.12.2025</p>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="cars-template">
+    <section class="cars-section active-section">
+      <div class="section-title">
+        <h2>Каталог автомобилей</h2>
+        <p>Выберите автомобиль своей мечты</p>
+      </div>
+      <div id="car-list" class="car-grid"></div>
+    </section>
+  </template>
+
+  <template id="order-template">
+    <section class="order active-section">
+      <div class="section-title">
+        <h2>Оформить заказ</h2>
+        <p>Заполните форму для оформления заказа выбранного автомобиля</p>
+      </div>
+      <div class="form-container">
+        <form id="order-form">
+          <div class="form-group">
+            <label for="order-name">Ваше имя:</label>
+            <input type="text" id="order-name" required>
+          </div>
+          <div class="form-group">
+            <label for="order-phone">Телефон:</label>
+            <input type="tel" id="order-phone" required>
+          </div>
+          <div class="form-group">
+            <label for="order-model">Модель автомобиля:</label>
+            <select id="order-model" required>
+              <option value="">Выберите модель</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="order-address">Адрес доставки:</label>
+            <input type="text" id="order-address" required>
+          </div>
+          <button type="submit" class="submit-btn">Оформить заказ</button>
+        </form>
+      </div>
+    </section>
+  </template>
+
+  <template id="reviews-template">
+    <section class="reviews active-section">
+      <div class="section-title">
+        <h2>Отзывы клиентов</h2>
+        <p>Что говорят о нас наши клиенты</p>
+      </div>
+      <div class="reviews-container">
+        <div class="review-form">
+          <h3>Оставить отзыв</h3>
+          <form id="review-form">
+            <div class="form-group">
+              <textarea placeholder="Ваш отзыв..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+          </form>
+        </div>
+        <div class="reviews-list" id="reviews-list">
+          <!-- Отзывы будут здесь -->
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="contact-template">
+    <section class="contact active-section">
+      <div class="section-title">
+        <h2>Контакты</h2>
+        <p>Мы всегда рады вам помочь</p>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <h3>Адрес</h3>
+          <p>г. Минск, ул. Автомобильная, 123</p>
+        </div>
+        <div class="contact-item">
+          <h3>Телефон</h3>
+          <p>+375 (29) 671-96-16</p>
+        </div>
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p>michael.veremeenko@gmail.com</p>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
