@@ -8,28 +8,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="wrapper">
+    <div class="content">
   <header>
     <div class="header-container">
-      <div class="logo-container">
-        <img src="img/vadim.png" alt="Логотип" class="logo">
-        <h1>у<span>Вадима</span></h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#" data-section="promotions">АКЦИИ</a></li>
-          <li><a href="#" data-section="cars">АВТОМОБИЛИ</a></li>
-          <li><a href="#" data-section="order">ОФОРМИТЬ ЗАКАЗ</a></li>
-          <li><a href="#" data-section="reviews">ОТЗЫВЫ</a></li>
-          <li><a href="#" data-section="contact">КОНТАКТЫ</a></li>
-        </ul>
-      </nav>
-      <div class="auth-dropdown">
-        <button class="auth-btn dropdown-toggle">Профиль</button>
-        <div class="dropdown-menu">
-          <button class="auth-btn">Вход</button>
-          <button class="auth-btn">Регистрация</button>
+        <div class="logo-container">
+            <img src="img/vadim.svg" alt="Логотип" class="logo">
+            <h1>у<span>Вадима</span></h1>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-      </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#" data-section="promotions">АКЦИИ</a></li>
+                <li><a href="#" data-section="cars">АВТОМОБИЛИ</a></li>
+                <li><a href="#" data-section="order">ОФОРМИТЬ ЗАКАЗ</a></li>
+                <li><a href="#" data-section="reviews">ОТЗЫВЫ</a></li>
+                <li><a href="#" data-section="contact">КОНТАКТЫ</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#" data-section="promotions">АКЦИИ</a></li>
+                <li><a href="#" data-section="cars">АВТОМОБИЛИ</a></li>
+                <li><a href="#" data-section="order">ОФОРМИТЬ ЗАКАЗ</a></li>
+                <li><a href="#" data-section="reviews">ОТЗЫВЫ</a></li>
+                <li><a href="#" data-section="contact">КОНТАКТЫ</a></li>
+                <li class="mobile-auth">
+                    <button class="auth-btn" id="mobile-login-btn">Вход</button>
+                    <button class="auth-btn" id="mobile-register-btn">Регистрация</button>
+                </li>
+            </ul>
+        </nav>
+        <div class="auth-dropdown">
+            <button class="auth-btn dropdown-toggle">Профиль</button>
+            <div class="dropdown-menu">
+                <button class="auth-btn" id="login-btn">Вход</button>
+                <button class="auth-btn" id="register-btn">Регистрация</button>
+            </div>
+        </div>
     </div>
   </header>
 
@@ -37,11 +57,13 @@
     <div id="content-container"></div>
   </main>
 
-  <footer>
+      </div>
+    <footer>
     <div class="copyright">
       © 2025 уВадима. Все права защищены.
     </div>
-  </footer>
+      </footer>
+  </div>
 
   <!-- Шаблоны секций -->
   <template id="promotions-template">

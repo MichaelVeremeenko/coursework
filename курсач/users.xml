@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <login>admin</login>
+        <password>admin123</password>
+        <name>Администратор</name>
+        <email>admin@example.com</email>
+        <phone>+375291234567</phone>
+    </user>
+    <user>
+        <login>user1</login>
+        <password>user123</password>
+        <name>Иван Иванов</name>
+        <email>ivan@example.com</email>
+        <phone>+375297654321</phone>
+    </user>
+</users>
